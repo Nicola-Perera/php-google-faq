@@ -4,9 +4,14 @@ Riscrivere questa pagina del sito google https://policies.google.com/faq.
 Ci sono diverse domande con relative risposte. 
 Gestire il “Database” e la visualizzazione di queste domande e risposte con PHP.
 */
+$faqs = [
+    [
+        'question' => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio",
+        'answers' => ['risposta 1', 'risposta 2', 'risposta 3']
+    ]
+];
 
-var_dump('ciao');
-echo 'salve';
+var_dump ($faqs[0]['answers']);
 ?>
 
 <!DOCTYPE html>
@@ -18,21 +23,6 @@ echo 'salve';
     <title>php-google-faq</title>
 </head>
 <body>
-    
-    <?php
-        if (isset($_POST['faq'])) {
-            $name = $_POST['name'];
-            $country = $_POST['country'];
-        }
-    ?>
-
-    <form action="faq.php" method='post'>
-        Inserisci nome: <input type="text" name="name">
-        Inserisci paese: <input type="text" name="country">
-        <!-- <input type="submit" value="submit" name="submit"> -->
-    </form>
-<h1>link</h1>
-    <a href="" value="faq" name="faq">Domande frequenti</a>
 
 </body>
 </html>
