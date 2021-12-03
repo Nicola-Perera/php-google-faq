@@ -38,5 +38,15 @@ var_dump ($faqs[0]['answers']);
 </head>
 <body>
 
+    <main>
+        <?php
+            foreach($faqs as $post=>$value): ?>
+                <h2>
+                    domanda <?= echo $post['question']; ?>
+                </h2>
+                <?php endforeach; 
+        ?>
+    </main>
+
 </body>
 </html>
