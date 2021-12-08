@@ -44,7 +44,7 @@ $faqs = [
 
 ];
 
-var_dump ($faqs[0]['answerx']);
+// var_dump ($faqs[0]['answer']);
 ?>
 
 <!DOCTYPE html>
@@ -61,8 +61,11 @@ var_dump ($faqs[0]['answerx']);
         <?php
             foreach($faqs as $post=>$value): ?>
                 <h2>
-                    domanda <?= $value['question']; ?>
+                    <?php echo $value['question']; ?>
                 </h2>
+                <p>
+                    <?php echo $value['answer']; ?>    
+                </p>
                 <?php endforeach; 
         ?>
     </main>
