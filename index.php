@@ -58,6 +58,15 @@ $faqs = [
 </head>
 <body>
 
+    <header>
+        <div class="top_header">
+            <img class="logo" src="https://biografieonline.it/img/bio/g/Google.jpg" alt="Google logo">
+            <span>
+                <h1>Privacy e Termini</h1>
+            </span>
+        </div>
+    </header>
+
     <main>
         <div class="main_content">
             <?php
