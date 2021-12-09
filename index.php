@@ -54,20 +54,22 @@ $faqs = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php-google-faq</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
 
     <main>
-        <?php
-            foreach($faqs as $post=>$value): ?>
-                <h2>
-                    <?php echo $value['question']; ?>
-                </h2>
-                <p>
-                    <?php echo $value['answer']; ?>    
-                </p>
-                <?php endforeach; 
-        ?>
+        <div class="main_content">
+            <?php
+                foreach($faqs as $post=>$value): ?>
+                    <h2>
+                        <?php echo $value['question']; ?>
+                    </h2>
+                    <p>
+                        <?php echo $value['answer']; ?>    
+                    </p>
+                    <?php endforeach; ?>
+        </div>
     </main>
 
 </body>
