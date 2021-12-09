@@ -59,15 +59,39 @@ $faqs = [
 <body>
 
     <header>
-        <div class="top_header">
+
+    <!-- logo -->
+        <div class="top_header container">
             <img class="logo" src="https://biografieonline.it/img/bio/g/Google.jpg" alt="Google logo">
             <span>
                 <h1>Privacy e Termini</h1>
             </span>
         </div>
+
+        <!-- navbar -->
+        <div class="nav">
+        <ul class="container">
+            <li>
+                <a>Introduzione</a>
+            </li>
+            <li>
+                <a>Norme sulla privacy</a>
+            </li>
+            <li>
+                <a>Termini di servizio</a>
+            </li>
+            <li>
+                <a>Tecnologie</a>
+            </li>
+            <li class="active">
+                <a>Domande frequenti</a>
+            </li>
+        </ul>
+        </div>
     </header>
 
     <main>
+        <!-- faqs -->
         <div class="main_content">
             <?php
                 foreach($faqs as $post=>$value): ?>

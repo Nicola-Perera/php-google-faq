@@ -5,11 +5,17 @@
     padding: 0;
 }
 
-/* header */
-.top_header {
+/* common rules */
+.container {
     display: flex;
     align-items: center;
+}
+
+/* header */
+header {
     color: grey;
+    padding: 1rem 0;
+    border-bottom: 2px solid gray;
 }
 .logo {
     width: 10%;
@@ -17,6 +23,19 @@
 }
 h1 {
     font-size: 1.5rem;
+}
+
+ul {
+    width: 60%;
+    list-style: none;
+    justify-content: space-between;
+}
+li {
+    padding-bottom: .3rem;
+}
+.active {
+    color: blue;
+    border-bottom: 2px solid blue;
 }
 
 /* main content */
